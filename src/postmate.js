@@ -259,7 +259,7 @@ class Postmate {
     this.parent = window;
     this.frame = document.createElement('iframe');
     this.frame.allow = 'microphone';
-    this.frame.name = 'poopoo'//name || '';
+    this.frame.name = name || '';
 
     attributes.forEach((datum) => {
       this.frame.setAttribute(datum.name, datum.value);

@@ -278,8 +278,7 @@ var Postmate = /*#__PURE__*/function () {
     this.parent = window;
     this.frame = document.createElement('iframe');
     this.frame.allow = 'microphone';
-    this.frame.name = 'poopoo'; //name || '';
-
+    this.frame.name = name || '';
     attributes.forEach(function (datum) {
       _this4.frame.setAttribute(datum.name, datum.value);
     });
