@@ -258,6 +258,7 @@ class Postmate {
   }) { // eslint-disable-line no-undef
     this.parent = window;
     this.frame = document.createElement('iframe');
+    this.frame.allow = 'microphone'
     this.frame.name = name || '';
 
     attributes.forEach((datum) => {
