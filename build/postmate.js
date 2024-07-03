@@ -1,6 +1,6 @@
 /**
   postmatex - Fork of original: A powerful, simple, promise-based postMessage library
-  @version v1.7.5
+  @version v1.8.0
   @link https://github.com/johndcarmichael/postmatex
   @author Jacob Kelley <jakie8@gmail.com>
   @license MIT
@@ -279,7 +279,9 @@ var Postmate = /*#__PURE__*/function () {
     // eslint-disable-line no-undef
     this.parent = window;
     this.frame = document.createElement('iframe');
-    this.frame.name = name || '';
+    this.frame.allow = 'microphone';
+    this.frame.name = 'poopoo'; //name || '';
+
     attributes.forEach(function (datum) {
       _this4.frame.setAttribute(datum.name, datum.value);
     });
